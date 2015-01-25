@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	
+	<title>Prefreader</title>
+
+	<link rel="shortcut icon" href="images/gt_favicon.png">
+	
+	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- Custom styles for our template -->
+	<link rel="stylesheet" href="css/bootstrap-theme.css" media="screen" >
+	<link rel="stylesheet" href="css/main.css">
+	<style> 
+  .textbox1 { 
+    background: white; 
+    border: 1px solid grey; 
+    border-radius: 5px; 
+    box-shadow: 0 0 5px 3px grey; 
+    color: #666; 
+    outline: none; 
+    height:30px; 
+    width: 275px; 
+  } 
+  .btnbtnbtn {
+  background: #4de627;
+  background-image: -webkit-linear-gradient(top, #4de627, #20750f);
+  background-image: -moz-linear-gradient(top, #4de627, #20750f);
+  background-image: -ms-linear-gradient(top, #4de627, #20750f);
+  background-image: -o-linear-gradient(top, #4de627, #20750f);
+  background-image: linear-gradient(to bottom, #4de627, #20750f);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btnbtnbtn:hover {
+  background: #3fcc2f;
+  background-image: -webkit-linear-gradient(top, #3fcc2f, #24db14);
+  background-image: -moz-linear-gradient(top, #3fcc2f, #24db14);
+  background-image: -ms-linear-gradient(top, #3fcc2f, #24db14);
+  background-image: -o-linear-gradient(top, #3fcc2f, #24db14);
+  background-image: linear-gradient(to bottom, #3fcc2f, #24db14);
+  text-decoration: none;
+}
+ </style> 
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+	<script src="js/jquery-1.11.1.js"></script>
+	<script src="js/headroom.min.js"></script>
+	<script src="js/jQuery.headroom.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-slider.js"></script>
+	<script src="js/template.js"></script>
+	<script src="js/search.js"></script>
+</head>
+<body class="home">
+<!-- Fixed navbar -->
+	<div class="navbar navbar-inverse navbar-fixed-top headroom animated slideDown">
+		<div class="container">
+			<div class="navbar-header">
+				<!-- Button for smallest screens -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<a class="navbar-brand"><img src="images/logo.png" alt="Progressus HTML5 template"></a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav pull-right">		
+					<li><a href="contact.html">Contact</a></li>
+					<li><a class="btn" id="signoutbutton">SIGN OUT</a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</div> 
+	<!-- /.navbar -->
+	<header id="head" class="secondary"></header>
+	
+
+	<!-- container -->
+	<div class="container">
+
+		<div class="row">
+			
+			<!-- Sidebar -->
+			<aside class="col-md-4 sidebar sidebar-left">
+
+				<div class="row widget">
+					<div class="col-xs-12">
+						
+				<form id="searchform" name="searchform">
+				 <input type="text" id="searchterms" name="searchterms" placeholder=" Search..." class="textbox1"/>
+				<button type="submit" style="height:35px;width:35px;background:transparent;border-color: transparent;" id="submit" name="submit"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+				</form>
+					</div>
+				</div>
+				
+				<div class="row widget" id="peersearches" name="peersearches">
+					<div class="col-xs-12">
+							<h3 class="page-title">Peer Searches:</h3>
+							<div id="peer" name="peer"></div>
+					</div>
+				</div>
+
+			</aside>
+			<!-- /Sidebar -->
+
+			<!-- Article main content -->
+			<article class="col-md-8 maincontent" id="hottopicsarticle">
+				<header class="page-header">
+					<h3 class="page-title">Trending</h3>
+				</header>
+	
+				
+					<div id="hottopics" name="hottopics"></div>
+			</article>
+			<article class="col-md-8 maincontent" id="searchresultsarticle">
+				<header class="page-header">
+					<h3 class="page-title">Results</h3>
+				</header>
+
+				
+					<div id="searchresults" name="searchresults"></div>
+			</article>
+			<!-- /Article -->
+
+		</div>
+	</div>	<!-- /container -->
+	
+</body>
+</html>
