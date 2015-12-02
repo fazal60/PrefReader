@@ -3,7 +3,7 @@ What is PrefReader?
 Apache Solr powered Web Search Engine Developed in J2EE
 
 1) News Search Engine which provides Results Customized to user Preferences.
-2) Powered by Apache SOLR to index and query news corpses.
+2) Powered by Apache SOLR to index and query news corpuses like NYT, Washington Post, Reuters.
 3) Suggests Articles about trending topics in area of user's interest 
 4) Implemented Collaborative filtering to suggest user with article read by similar users.
 5) Responsive front-end for different devices.
